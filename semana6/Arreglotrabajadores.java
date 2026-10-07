@@ -1,0 +1,15 @@
+package semana6;
+
+public class Arreglotrabajadores {
+    public static void main(String[] args)throws Exception {
+        //creacion del arreglo trabajadroes(arreglo de objetos)
+        Trabajador[] trabajadores = new Trabajador [3];
+        //creacion del objeto trabajador y asignado a la posicion del arreglo  
+        trabajadores[0] =new Trabajador (101125635, "alex",100.0);
+        trabajadores[1] =new Trabajador (153145675, "brandon",850.0);
+        trabajadores[2] =new Trabajador (111432622, "Jonier",1000.0);
+        for(int i = 0; i< trabajadores.length;i++){
+            System.out.println("salario a pagar a: "+ trabajadores[i].getNombre()+"es:"+trabajadores[i].pagar());
+        }
+    }
+}

@@ -18,4 +18,3 @@ public class Arreglosuma {
         System.out.println("La suma del arreglo es: " + sumaArreglo);
     }
 }
-
