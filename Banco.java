@@ -7,7 +7,7 @@ public class Banco {
         this.direccion = direccion;
         this.cuenta = cuenta;
     }
-    public void abriCuenta(Cliente cliente){
+    public void abrirCuenta(Cliente cliente){
         System.out.println("apertura de cuenta:"+cliente);
     }
     @Override
