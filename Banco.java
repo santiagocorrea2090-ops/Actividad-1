@@ -1,0 +1,13 @@
+public class Banco {
+    private String nombre;
+    private String direccion;
+    private Cuenta cuenta;
+    public Banco(String nombre, String direccion, Cuenta cuenta) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.cuenta = cuenta;
+    }
+    public void abriCuenta(Cliente cliente){
+        system.out.println("apertura de cuenta:"+cliente);
+    }
+}
