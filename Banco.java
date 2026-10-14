@@ -8,6 +8,6 @@ public class Banco {
         this.cuenta = cuenta;
     }
     public void abriCuenta(Cliente cliente){
-        system.out.println("apertura de cuenta:"+cliente);
+        System.out.println("apertura de cuenta:"+cliente);
     }
 }
