@@ -1,3 +1,4 @@
+package semana7;
 public class Cliente {
     private int indetificacion;
     private String nombre;

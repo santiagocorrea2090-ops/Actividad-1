@@ -1,3 +1,4 @@
+package semana7;
 public class Cuenta {
     private String numerodecuenta;
     private String titula;

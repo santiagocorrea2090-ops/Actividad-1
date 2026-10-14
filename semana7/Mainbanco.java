@@ -1,3 +1,4 @@
+package semana7;
 public class Mainbanco {
     public static void main(String[] args) {
         Cuenta cuenta = new Cuenta("12345678910", "brandon alexis ocoro", 0);
