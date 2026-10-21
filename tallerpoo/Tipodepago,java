@@ -1,0 +1,6 @@
+public class  Tipodepago{
+    private int numeropago;
+    private date hora;
+    private double valor;
+    
+}

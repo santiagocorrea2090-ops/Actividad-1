@@ -1,4 +1,8 @@
 package semana7;
+
+import semana7.Cliente;
+import semana7.Cuenta;
+
 public class Banco {
     private String nombre;
     private String direccion;

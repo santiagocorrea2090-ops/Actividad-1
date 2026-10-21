@@ -9,4 +9,9 @@ public class Foto {
     public void print(){
         System.out.println(fichero);
     }
+    @Override
+    public String toString() {
+        return "Foto [fichero=" + fichero + "]";
+    }
+    
 }
