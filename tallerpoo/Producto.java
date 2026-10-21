@@ -1,6 +1,5 @@
-
-
 public class Producto {
+    
     private int numero;
 
     public Producto(int numero) {
@@ -11,9 +10,9 @@ public class Producto {
         return numero;
     }
 
-    @Override
-    public String toString() {
-        return "Producto [numero=" + numero + "]";
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
+    
 }

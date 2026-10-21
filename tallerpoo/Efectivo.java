@@ -1,11 +1,10 @@
-public class Efectivo {
-    import hava.util.date;
+import java.util.Date;
 
-    public class Efectivo extends Tipodepago{
-        public efectivo(int numeropago,date fecha,double valor){
-            super(numeropago,hora,valor)
-        }
-    
-        
+public class Efectivo extends TipoDePago{
+
+   public void pago(){
+        System.out.println("Pago con Efectivo");
     }
+    
+    
 }

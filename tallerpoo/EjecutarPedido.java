@@ -2,28 +2,23 @@ import java.util.Date;
 
 public class EjecutarPedido {
     public static void main(String[] args) {
-
-        Cliente cliente = new Cliente("16791597", "alexander correa");
-
-        Foto foto1 = new Foto("foto1");
-        Foto foto2 = new Foto("foto2");
-
-        Foto[] fotos = { foto1, foto2 };
-
+        Cliente cliente1 = new Cliente("12323", "Andres Rivera");
+        Foto foto = new Foto("foto1.jpg");
+        Foto foto1 = new Foto("foto2.jpg");
+        Foto[] fotos = new Foto[2];
+        fotos[0] = foto;
+        fotos[1] = foto1;
         Impresion impresion = new Impresion(1, "Verde", fotos);
-
-        Camara camara = new Camara(2, "EOS Rebel", null);
-
-        Producto[] productos = { impresion, camara };
-
-        Date fecha = new Date();
-
-        Pedido pedido = new Pedido(cliente, productos, fecha, 1233);
-
+        Camara camara = new Camara(2, "Canon", "EOS Rebel");
+        Producto[] productos = new Producto[2];
+        productos[0] = impresion;
+        productos[1] = camara;
+        Date now = new Date();
+        TipoDePago tipoDePago = new TarjetaCredito();
+        Pedido pedido = new Pedido(cliente1, productos, now, 1233, tipoDePago);
         pedido.mostrarPedido();
-
-        impresion.getFotos();
-
+        pedido.imprimirPago();
+        impresion.printFotos();
         System.out.println(camara);
     }
 }
