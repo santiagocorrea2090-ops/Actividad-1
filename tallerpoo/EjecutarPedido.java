@@ -12,7 +12,7 @@ public class EjecutarPedido {
 
         Impresion impresion = new Impresion(1, "Verde", fotos);
 
-        Camara camara = new Camara(2, "EOS Rebel");
+        Camara camara = new Camara(2, "EOS Rebel", null);
 
         Producto[] productos = { impresion, camara };
 
@@ -22,7 +22,7 @@ public class EjecutarPedido {
 
         pedido.mostrarPedido();
 
-        impresion.printFotos();
+        impresion.getFotos();
 
         System.out.println(camara);
     }

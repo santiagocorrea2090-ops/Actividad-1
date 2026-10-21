@@ -1,4 +1,4 @@
-package semana7.tallerpoo;
+
 
 public class Producto {
     private int numero;

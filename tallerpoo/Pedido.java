@@ -1,4 +1,4 @@
-package semana7.tallerpoo;
+
 
 import java.util.Arrays;
 import java.util.Date;
@@ -30,6 +30,17 @@ public class Pedido {
     public String toString() {
         return "Pedido [cliente=" + cliente + ", productos=" + Arrays.toString(productos) + ", fecha=" + fecha
                 + ", numeroTarjetaCredito=" + numeroTarjetaCredito + "]";
+    }
+    public void mostrarPedido() {
+        System.out.println(cliente);
+        System.out.println("fecha"+ fecha);
+        System.out.println("numero de tarjeta"+ numeroTarjetaCredito);
+        System.out.println("cantidad de productos"+ productos.length);
+        for (int i = 0; i < productos.length; i++) {
+            System.out.println(productos[i]);
+            
+        }
+        
     }
     
 }
