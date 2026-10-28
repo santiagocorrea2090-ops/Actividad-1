@@ -34,7 +34,7 @@ public class Pedido {
     }
 
     public void mostrarPedido(){
-        System.out.println("\t----Detalles del pedido:----");
+        System.out.println("\t----Detalles del pedido----");
         System.out.println(cliente);
         System.out.println("Fecha: " + fecha);
         System.out.println("Número de Tarjeta: " + numeroTarjetaCredito);
